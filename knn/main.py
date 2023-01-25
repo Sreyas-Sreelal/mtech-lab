@@ -3,11 +3,10 @@ from sklearn.model_selection import train_test_split
 from sklearn.neighbors import KNeighborsClassifier
 iris_data = datasets.load_iris()
 train_X,test_X, train_Y,test_Y = train_test_split(iris_data.data,iris_data.target,train_size=0.5)
-
 print("Total train data",len(train_X),"Total test data",len(test_X))
+
 knn = KNeighborsClassifier(n_neighbors=3)
 knn.fit(train_X, train_Y)
-
 predicted = knn.predict(test_X)
 
 count_correct = 0
