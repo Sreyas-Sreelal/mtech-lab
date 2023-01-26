@@ -1,1 +1,6 @@
 __pycache__
+*.zip
+*.jpg
+*.txt
+image-captioning-RNN/Flickr8k_Dataset/__MACOSX/._Flicker8k_Dataset
+*.pkl
