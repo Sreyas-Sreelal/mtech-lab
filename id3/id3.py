@@ -51,7 +51,7 @@ def make_node(data,node):
             processed_features.append(maximum)
             if(len(processed_features) != len(data.columns.tolist())) :
                 for x in feature_values[maximum]:
-                    print("appending",maximum,x)
+                    #print("appending",maximum,x)
                     node.arrows.append(x)
                     node.children.append(make_node(data[data[maximum] ==x],Node()))
     else:

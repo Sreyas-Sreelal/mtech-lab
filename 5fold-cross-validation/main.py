@@ -9,8 +9,9 @@ model = svm.SVC()
 
 scores = cross_validate(model, X,Y,cv=5,scoring=['precision_macro','accuracy','recall_macro','f1_macro'])
 for idx in range(5):
-    print(scores['test_precision_macro'][idx])
-    print(scores['test_accuracy'][idx])
-    print(scores['test_recall_macro'][idx])
-    print(scores['test_f1_macro'][idx])
+    print("Fold",idx+1)
+    print("Precision",scores['test_precision_macro'][idx])
+    print("Accuracy",scores['test_accuracy'][idx])
+    print("Recall",scores['test_recall_macro'][idx])
+    print("F1 Score",scores['test_f1_macro'][idx])
     print()

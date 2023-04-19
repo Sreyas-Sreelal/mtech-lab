@@ -54,7 +54,7 @@ def calculateAccuracy(train,test):
             correct+=1
     cm = confusion_matrix(y_test, y_pred)
     print()
-    print(classification_report(y_test, y_pred))
+    print(classification_report(y_test, y_pred,zero_division=1))
     print("precision: ",cm[0][0]/(cm[0][0]+cm[1][0]))
     return correct/test.shape[0] * 100.0
 data = data.sample(n=1000)

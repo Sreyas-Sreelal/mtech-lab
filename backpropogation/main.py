@@ -10,7 +10,7 @@ X = numpy.array(([23,12], [20, 11], [13, 23],[31,14]))
 Y = numpy.array(([23], [45], [67],[80]))
 X = X/numpy.amax(X,axis=0)
 Y = Y/100
-iterations = 50000
+iterations = 5000
 learning_rate = 0.5
 input_neurons = 2
 hidden_neurons = 2
@@ -40,7 +40,7 @@ for _ in range(iterations):
 
     weights_output += activated_hidden.T.dot(d_output) * learning_rate
     weights_hidden +=  X.T.dot(d_hidden) * learning_rate
-
-    print("Predicted :",activated_output)
-    print("Actual:",Y)
-    print()
+print("After ",iterations,"iterations")
+print("Predicted :",activated_output)
+print("Actual:",Y)
+print()

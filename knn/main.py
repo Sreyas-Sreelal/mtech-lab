@@ -13,10 +13,10 @@ count_correct = 0
 count_wrong = 0
 for prediction,expected in zip(predicted,test_Y):
     if prediction == expected:
-        print("Correct prediction")
+        #print("Correct prediction")
         count_correct += 1
     else:
-        print("Wrong prediction")
+        #print("Wrong prediction")
         count_wrong += 1
 
 print("Wrong Predictions",count_wrong,"Correct Predictions",count_correct)
