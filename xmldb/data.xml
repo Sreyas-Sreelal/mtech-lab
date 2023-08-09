@@ -1,0 +1,30 @@
+<books>
+    <book publisher="Harper Voyager">
+        <title>A Song of ice and fire</title>
+        <price>10000</price>
+        <author>George RR Martin</author>
+        <year>1994</year>
+        <rating>10</rating>
+    </book>
+    <book publisher="Harper Voyager">
+        <title>Lord of the rings</title>
+        <price>100</price>
+        <author>Tolkein</author>
+        <year>1920</year>
+        <rating>9</rating>
+    </book>
+    <book publisher="Harvy Books">
+        <title>Beauty and Beast</title>
+        <price>10000</price>
+        <author>George RR Martin</author>
+        <year>1990</year>
+        <rating>5</rating>
+    </book>
+    <book publisher="Peterson">
+        <title>12 rules of life</title>
+        <price>400</price>
+        <author>Jordan Peterson</author>
+        <year>2017</year>
+        <rating>7</rating>
+    </book>
+</books>
