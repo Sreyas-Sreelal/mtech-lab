@@ -17,6 +17,7 @@ def pagerank(nodes,key):
             continue
         if nodes[key] in nodes[x].links:
             rank += default_rank/nodes[x].outdegree
+    
     return rank            
 
 nodes = dict([(chr(x+65),Node(chr(x+65))) for x in range(int(input("Number of nodes: ")))])
@@ -25,11 +26,11 @@ print("Type node linkage x to y in format x y and write done to finish linkage\n
 
 while True:
     userinput = input("")
-    
     if userinput == "done":
         break
     X,Y = userinput.split()
     nodes[X].link(nodes[Y])
+
 while True:
     try:
         query = input("Enter name of the node to calculate it's web page rank (Ctrl+C to quit!): ")
